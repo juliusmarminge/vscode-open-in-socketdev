@@ -1,54 +1,45 @@
 {
-  "publisher": "antfu",
-  "name": "ext-name",
-  "displayName": "ext-name",
+  "publisher": "juliusmarminge",
+  "name": "open-in-socket-dev",
+  "displayName": "Open in Socket.dev",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@10.4.1",
-  "description": "",
-  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "packageManager": "pnpm@10.11.1",
+  "description": "Adds Socket.dev links when hovering over package names in package.json",
+  "author": "Julius Marminge <julius0216@outlook.com>",
   "license": "MIT",
-  "funding": "https://github.com/sponsors/antfu",
-  "homepage": "https://github.com/antfu/ext-name#readme",
+  "funding": "https://github.com/sponsors/juiliusmarminge",
+  "homepage": "https://github.com/juliusmarminge/open-in-socket-dev#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/antfu/ext-name"
+    "url": "https://github.com/juliusmarminge/open-in-socket-dev"
   },
   "bugs": {
-    "url": "https://github.com/antfu/ext-name/issues"
+    "url": "https://github.com/juliusmarminge/open-in-socket-dev/issues"
   },
   "sponsor": {
-    "url": "https://github.com/sponsors/antfu"
+    "url": "https://github.com/sponsors/juliusmarminge"
   },
   "categories": [
     "Other"
   ],
   "main": "./dist/index.js",
-  "icon": "res/icon.png",
   "files": [
     "LICENSE.md",
-    "dist/*",
-    "res/*"
+    "dist/*"
   ],
   "engines": {
-    "vscode": "^1.97.0"
+    "vscode": "^1.74.0"
   },
   "activationEvents": [
-    "onStartupFinished"
+    "onLanguage:json"
   ],
   "contributes": {
-    "commands": [],
-    "configuration": {
-      "type": "object",
-      "title": "ext-name",
-      "properties": {}
-    }
+    "commands": []
   },
   "scripts": {
     "build": "tsdown src/index.ts --external vscode",
     "dev": "nr build --watch --sourcemap",
-    "prepare": "nr update",
-    "update": "vscode-ext-gen --output src/generated/meta.ts",
     "lint": "eslint .",
     "vscode:prepublish": "nr build",
     "publish": "vsce publish --no-dependencies",
@@ -58,25 +49,16 @@
     "release": "bumpp && nr publish"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^4.2.1",
-    "@antfu/ni": "^23.3.1",
-    "@types/node": "^22.13.4",
-    "@types/vscode": "^1.97.0",
-    "@vscode/vsce": "^3.2.2",
-    "bumpp": "^10.0.3",
-    "eslint": "^9.20.1",
-    "esno": "^4.8.0",
-    "pnpm": "^10.4.1",
-    "reactive-vscode": "^0.2.10",
-    "tsdown": "^0.9.6",
-    "typescript": "^5.7.3",
-    "vite": "^6.1.0",
-    "vitest": "^3.0.5",
-    "vscode-ext-gen": "^1.0.0"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild"
-    ]
+    "@antfu/eslint-config": "^4.14.1",
+    "@antfu/ni": "^25.0.0",
+    "@types/node": "^22.15.30",
+    "@types/vscode": "^1.100.0",
+    "@vscode/vsce": "^3.5.0",
+    "bumpp": "^10.1.1",
+    "eslint": "^9.28.0",
+    "tsdown": "^0.12.7",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "vitest": "^3.2.2"
   }
 }

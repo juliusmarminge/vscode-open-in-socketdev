@@ -1,0 +1,21 @@
+name: Setup Workflow
+description: Composite action that sets up bun and installs dependencies
+runs:
+  using: composite
+  steps:
+    - name: Install pnpm
+      uses: pnpm/action-setup@v2
+
+    - name: Set node
+      uses: actions/setup-node@v3
+      with:
+        node-version: lts/*
+        cache: pnpm
+
+    - name: Setup
+      run: npm i -g @antfu/ni
+      shell: bash
+
+    - name: Install
+      run: nci
+      shell: bash

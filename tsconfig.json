@@ -1,14 +1,22 @@
 {
   "compilerOptions": {
-    "target": "es2017",
-    "lib": ["esnext"],
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
+    "target": "es2022",
+
+    /* Bundled projects */
+    "lib": ["dom", "dom.iterable", "ES2022"],
+    "module": "Preserve",
+    "allowImportingTsExtensions": true,
+
+    /* Strictness */
     "strict": true,
-    "strictNullChecks": true,
-    "esModuleInterop": true,
-    "skipDefaultLibCheck": true,
+    "noUncheckedIndexedAccess": true,
+    "declaration": true,
+    "noEmit": true,
+    "isolatedDeclarations": true,
+    "isolatedModules": true,
+    /* Base Options: */
     "skipLibCheck": true
-  }
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules", "tsdown.config.ts"]
 }
