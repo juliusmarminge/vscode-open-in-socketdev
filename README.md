@@ -2,6 +2,10 @@
 
 <a href="https://marketplace.visualstudio.com/items?itemName=antfu.ext-name" target="__blank"><img src="https://img.shields.io/visual-studio-marketplace/v/antfu.ext-name.svg?color=eee&amp;label=VS%20Code%20Marketplace&logo=visual-studio-code" alt="Visual Studio Marketplace Version" /></a>
 
+Provides an "Open in Socket.dev" tooltip when hovering package names:
+
+![CleanShot 2025-06-08 at 21 18 21@2x](https://github.com/user-attachments/assets/4c4db6b0-387f-474d-bbc9-580e47eec19f)
+
 ## Configurations
 
 <!-- configs -->
