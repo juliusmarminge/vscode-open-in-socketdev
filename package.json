@@ -2,7 +2,7 @@
   "publisher": "juliusmarminge",
   "name": "open-in-socket-dev",
   "displayName": "Open in Socket.dev",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "packageManager": "pnpm@10.11.1",
   "description": "Adds Socket.dev links when hovering over package names in package.json",
