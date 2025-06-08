@@ -1,8 +1,8 @@
 {
   "publisher": "juliusmarminge",
-  "name": "vscode-open-in-socketdev",
+  "name": "open-in-socket-dev",
   "displayName": "Open in Socket.dev",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "private": true,
   "packageManager": "pnpm@10.11.1",
   "description": "Adds Socket.dev links when hovering over package names in package.json",
