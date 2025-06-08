@@ -1,21 +1,21 @@
 {
   "publisher": "juliusmarminge",
-  "name": "open-in-socket-dev",
+  "name": "vscode-open-in-socketdev",
   "displayName": "Open in Socket.dev",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "private": true,
   "packageManager": "pnpm@10.11.1",
   "description": "Adds Socket.dev links when hovering over package names in package.json",
   "author": "Julius Marminge <julius0216@outlook.com>",
   "license": "MIT",
   "funding": "https://github.com/sponsors/juiliusmarminge",
-  "homepage": "https://github.com/juliusmarminge/open-in-socket-dev#readme",
+  "homepage": "https://github.com/juliusmarminge/vscode-open-in-socketdev#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/juliusmarminge/open-in-socket-dev"
+    "url": "https://github.com/juliusmarminge/vscode-open-in-socketdev"
   },
   "bugs": {
-    "url": "https://github.com/juliusmarminge/open-in-socket-dev/issues"
+    "url": "https://github.com/juliusmarminge/vscode-open-in-socketdev/issues"
   },
   "sponsor": {
     "url": "https://github.com/sponsors/juliusmarminge"
